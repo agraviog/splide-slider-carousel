@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav here -->
+    <nav class="navigation">
+      <div class="nav__wrapper">
+        <a class="logo" href="#"><img src="/img/logo.svg" alt="" /></a>
+        <button class="nav-tgl">
+          <div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+          </div>
+        </button>
+      </div>
+    </nav>
+    <section class="header">
+      <!-- slider here -->
+      <div class="slider__container">
+        <!-- header here -->
+        <div class="header__content">
+          <h1 class="header__title">
+            Slider by
+            <a href="https://splidejs.com/" target="_blank">Splide.js</a>
+          </h1>
+          <p class="header__subtitle">
+            a lightweight, powerful and flexible slider and carousel, written in
+            pure JavaScript without any dependencies.
+          </p>
+        </div>
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-1.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-2.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-3.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-4.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-5.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="/img/Rectangle-6.jpg"
+                  alt="woman in yellow background"
+                />
+              </div>
+              <div class="splide__slide"></div>
+              <div class="splide__slide"></div>
+            </div>
+          </div>
+          <!-- arrow here -->
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="/img/left-arrow.svg" alt="left-arrow" />
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <img src="/img/right-arrow.svg" alt="right-arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer here -->
+      <div class="footer">
+        <div class="footer__wrapper">
+          <p class="footer__subs">
+            2021 © Designed & Developed by
+            <span>
+              <a href="https://www.instagram.com/agraviog/" target="_blank"
+                >@agraviog</a
+              ></span
+            >
+          </p>
+          <p class="footer__subs">
+            Portrait photos by
+            <span>
+              <a
+                href="https://www.behance.net/gallery/95880961/Portraits-retouch-for-EuMe"
+                target="_blank"
+                >Marreco Retoucher</a
+              >
+            </span>
+            from Behance
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          perPage: 3,
+          gap: "2em",
+          perMove: 1,
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
