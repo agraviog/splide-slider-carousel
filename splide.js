@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       768: {
         perPage: 2,
+        gap: "1.5em",
       },
       480: {
         perPage: 1.2,
+        gap: "1.5em",
       },
     },
   }).mount();
