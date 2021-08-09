@@ -128,12 +128,6 @@ a {
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .hide-this {
-    display: none;
-  }
-}
-
 .splide__img {
   width: 100%;
   border-radius: 500px;
