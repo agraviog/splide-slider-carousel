@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".splide", {
+  new Splide(".splide-2", {
+    type: "loop",
     perPage: 3,
     gap: "2em",
     perMove: 1,
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gap: "1.5em",
       },
       480: {
-        perPage: 1,
+        perPage: 1.2,
         gap: "1.5em",
       },
     },
