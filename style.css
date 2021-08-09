@@ -90,6 +90,15 @@ a {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 860px) {
+  .footer__wrapper {
+    display: block;
+  }
+  .footer__subs {
+    margin: 0 0 1em 0;
+  }
+}
+
 /* splide */
 
 .splide__pagination {
